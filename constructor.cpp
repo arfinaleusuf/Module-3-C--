@@ -22,12 +22,17 @@ class Student
 };
 int main()
 {
-    Student rohim(45,5,3.25);
+    int r;
+    int c;
+    double g;
+    cin>> r >> c >> g;
 
-    Student korim(2,5,5);
+    Student rohim(r,c,g);
+
+    // Student korim();
 
 
     cout<< rohim.roll<< " " << rohim.cls << " " << rohim.gpa << endl;
-    cout<< korim.roll<< " " << korim.cls << " " << korim.gpa << endl;
+    // cout<< korim.roll<< " " << korim.cls << " " << korim.gpa << endl;
     return 0;
 }

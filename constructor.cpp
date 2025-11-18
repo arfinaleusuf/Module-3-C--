@@ -7,27 +7,27 @@ class Student
     int cls;
     double gpa;
 
-    Student(int r, int c, double g) // constructor
+    // Student(int r, int c, double g) // constructor
 
-    /* eta speacial type er function
-    1. kichi return kore na;
-    2. ei function er nam class er nam er hubu hu rakhte hoy
+    // /* eta speacial type er function
+    // 1. kichi return kore na;
+    // 2. ei function er nam class er nam er hubu hu rakhte hoy
 
-    */
-    {
-        roll = r;
-        cls = c;
-        gpa = g;
-    }
+    // */
+    // {
+    //     roll = r;
+    //     cls = c;
+    //     gpa = g;
+    // }
 };
 int main()
 {
     int r;
     int c;
     double g;
-    cin>> r >> c >> g;
+    Student rohim;
+    cin>> rohim.roll >> rohim.cls >> rohim.gpa;
 
-    Student rohim(r,c,g);
 
     // Student korim();
 

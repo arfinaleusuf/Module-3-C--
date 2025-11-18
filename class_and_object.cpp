@@ -11,8 +11,12 @@ class Student // total 112 + 4/8 byte jayga nicche
 int main()
 {
     Student a,b;
-    cin>> a.name >> a.roll>> a.gpa;
-    cin >> b.name >> b.roll >> b.gpa;
+    cin.getline(a.name,100);
+    cin>> a.roll>> a.gpa;
+    cin.ignore();
+    // othoba getchar diyeo ignore kora jay
+    cin.getline(b.name,100);
+    cin >> b.roll >> b.gpa;
     cout << a.name << " " << a.roll << " " << a.gpa << endl;
     cout << b.name << " " << b.roll << " " << b.gpa << endl;
     return 0;

@@ -9,7 +9,6 @@ class Student
 
     Student(int roll, int cls, double gpa) 
     {
-        // (*this).roll = r;
         this->roll = roll;
         this->cls = cls;
         this->gpa = gpa;
@@ -18,11 +17,12 @@ class Student
 };
 int main()
 {
+
     Student rohim(45,5,3.25);
-    Student korim(4,5,3.26);
+    Student* korim = new Student(2,5,5.00);
 
 
     cout<< rohim.roll<< " " << rohim.cls << " " << rohim.gpa << endl;
-    cout<< korim.roll<< " " << korim.cls << " " << korim.gpa << endl;
+    cout<< korim->roll<< " " << korim->cls << " " << korim->gpa << endl;
     return 0;
 }

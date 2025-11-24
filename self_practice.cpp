@@ -3,16 +3,20 @@ using namespace std;
 class Employee
 {
     public:
-    char name[20];
+    string name;
     char dip;
     int salary;
+    Employee(string name, char dip, int salary)
+    {
+        this->name = name;
+        this->dip = dip;
+        this->salary = salary;
+    }
 };
 int main()
 {
-    Employee arfin;
-    cin.getline(arfin.name,20);
-    cin>> arfin.dip;
-    cin>> arfin.salary;
+    string name = "Arfin Al Eusuf";
+    Employee arfin(name,'A',100000);
     cout<<arfin.name<< " " << arfin.dip << " " << arfin.salary;
     return 0;
 }

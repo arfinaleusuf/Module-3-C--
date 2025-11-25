@@ -21,9 +21,16 @@ Student* fun()
     Student *p = &korim;
     return p;
 }
+Student * prac()
+{
+    Student rohim(3,5,4.75);
+    Student *p = &rohim;
+    return p;
+}
 int main()
 {
     Student *p = fun();
+    Student *q = fun();
 
     cout << p->roll << " " << p->cls << " " << p->gpa << endl;
     return 0;

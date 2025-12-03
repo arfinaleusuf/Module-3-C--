@@ -17,7 +17,7 @@ public:
 
 Student* fun()
 {
-    Student* korim = new Student (2, 5, 5.00);
+    Student* korim = new Student (1, 5, 5.00);
     return korim;
 }
 int main()

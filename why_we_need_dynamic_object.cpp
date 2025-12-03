@@ -23,14 +23,15 @@ Student* fun()
 }
 Student * prac()
 {
-    Student rohim(3,5,4.75);
+    Student rohim(4,5,4.75);
     Student *p = &rohim;
     return p;
 }
 int main()
 {
-    Student *p = fun();
+    Student *p = prac();
 
     cout << p->roll << " " << p->cls << " " << p->gpa << endl;
     return 0;
 }
+// it will show wrong ans
